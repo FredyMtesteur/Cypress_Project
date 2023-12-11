@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="Mon_style.css" rel="stylesheet" >
+    <title>Formulaire d'inscription</title>
+</head>
+
+<body>
+    <h1>Formulaire d'inscription : </h1>
+
+<div class="Frame">
+    <form action="mailto:freval45@gmail.com" method="post" > <!--form = formulaire / acion mailto: = envoyer un email / method = post-->
+
+        <label for="Lastname"><span> *</span> Nom :</label><!--intitulé-->
+        <input type="text" name="Lastname" id="Lastname" placeholder="Saisissez votre nom"/><!--Champ texte-->
+
+        <label for="Firstname"><span> *</span> Prénom :</label>
+        <input type="text" name="Firstname" id="Firstname" placeholder="Saisissez votre prénom"/>
+
+        <label for="email"><span> *</span> Email :</label>
+        <input type="email" name="email" id="email" placeholder="Saisissez votre email"/><!--Champ email-->
+
+        <label for="age"><span> *</span> Âge :</label>
+        <input type="age" name="age" id="age" placeholder="Saisissez votre âge"/><!--Champ age-->
+
+        <!--Boutons radio -->
+        <label class="Questions">Recommanderiez-vous ATA à un ami ?</label>
+        <div class="BtRad">
+            <label>
+                <input type="radio" name="Recommendations" id="Btr1" value="Yes"/><!--Bouton radio dans un label-->
+                Oui
+            </label>
+            <label>
+                <input type="radio" name="Recommendations" id="Btr2" value="No"/>
+                Non
+            </label>
+            <label>
+                <input type="radio" name="Recommendations" id="Btr3" value="Maybe"/>
+                Peut-être
+            </label>
+       </div>
+
+       <!--Check box -->
+        <label class="Questions">Quels frameworks d'automatisation connaissez-vous ?</label>
+        <div class="ChBox">    
+            <label>
+                <input type="checkbox" name="Frameworks" id="CB1" value="Cypress"/><!--Check Box dans un label-->
+                Cypress
+            </label>
+            <label>
+                <input type="checkbox" name="Frameworks" id="CB2" value="Selenium"/>
+                Selenium
+            </label>
+            <label>
+                <input type="checkbox" name="Frameworks" id="CB3" value="Robot Framework"/>
+                Robot Framework
+            </label>
+       </div>
+
+       <div><!--Liste de choix -->
+        <label for="Level">Comment trouvez-vous le language HTML ?<span> *</span></label><!--intitulé-->
+        <select name="Level" id="Level">
+                <option value="Easy">Facile</option>
+                <option value="Medium">Moyen</option>
+                <option value="Difficult">Difficile</option>
+                <option value="VeryDifficult">Très difficile</option>
+        </select>
+       </div>
+
+       <label class="target" for="Suggestions">Vos suggestions pour la formation :</label>
+       <textarea name="Suggestions" id="Suggestions" cols="5" rows="4"></textarea>
+ 
+       <!--Bouton -->
+       <button type="submit"> Valider</button>
+       <button type="reset"> Annuler</button>
+
+    </form>
+</div>
+
+</body>
+
+</html>
